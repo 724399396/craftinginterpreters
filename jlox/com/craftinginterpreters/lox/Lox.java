@@ -37,7 +37,7 @@ public class Lox {
             String line = reader.readLine();
             if (line == null) break;
             run(line);
-            hadError = true;
+            hadError = false;
         }
     }
 

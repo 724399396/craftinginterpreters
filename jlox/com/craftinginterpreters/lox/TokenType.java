@@ -8,7 +8,7 @@ public enum TokenType {
     // One or two character tokens
     BANG, BANG_EQUAL,
     EQUAL, EQUAL_EQUAL,
-    GREATER, GRATER_EQUAL,
+    GREATER, GREATER_EQUAL,
     LESS, LESS_EQUAL,
 
     // Literals.
@@ -16,7 +16,7 @@ public enum TokenType {
 
     // Keywords.
     AND, CLASS, ELSE, FALSE, FUN, FOR, IF, NIL, OR,
-    PRINT, RETURN, SUPER, THIS, TURE, VAR, WHILE,
+    PRINT, RETURN, SUPER, THIS, TRUE, VAR, WHILE,
 
     EOF
 }
