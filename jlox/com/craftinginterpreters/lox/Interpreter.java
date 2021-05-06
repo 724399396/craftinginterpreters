@@ -2,8 +2,6 @@ package com.craftinginterpreters.lox;
 
 import java.util.List;
 
-import static com.craftinginterpreters.lox.TokenType.*;
-
 public class Interpreter implements Expr.Visitor<Object>,
         Stmt.Visitor<Void> {
     private Environment environment = new Environment();
@@ -31,8 +29,28 @@ public class Interpreter implements Expr.Visitor<Object>,
         stmt.accept(this);
     }
 
+    void executeBlock(List<Stmt> statements,
+                           Environment environment) {
+        Environment previous = this.environment;
+        try {
+            this.environment = environment;
+            for (Stmt statement : statements) {
+                execute(statement);
+            }
+        } finally {
+            this.environment = previous;
+        }
+    }
+
     private Object evaluate(Expr expr) {
         return expr.accept(this);
+    }
+
+    @Override
+    public Object visitAssignExpr(Expr.Assign expr) {
+        Object value = evaluate(expr.value);
+        environment.assign(expr.name, value);
+        return value;
     }
 
     @Override
@@ -116,7 +134,12 @@ public class Interpreter implements Expr.Visitor<Object>,
 
     @Override
     public Object visitVariableExpr(Expr.Variable expr) {
-        return environment.get(expr.name);
+        Object value = environment.get(expr.name);
+        if (value == null) {
+            throw new RuntimeError(expr.name,
+                    "Uninitialized variable.");
+        }
+        return value;
     }
 
     private void checkNumberOperand(Token operator, Object operand) {
@@ -153,6 +176,12 @@ public class Interpreter implements Expr.Visitor<Object>,
         }
 
         return object.toString();
+    }
+
+    @Override
+    public Void visitBlockStmt(Stmt.Block stmt) {
+        executeBlock(stmt.statements, new Environment(environment));
+        return null;
     }
 
     @Override
