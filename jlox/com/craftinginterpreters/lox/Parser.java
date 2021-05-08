@@ -318,6 +318,24 @@ public class Parser {
             return new Expr.Grouping(expr);
         }
 
+        if (match(FUN)) {
+            consume(LEFT_PAREN, "Expect '(' after name.");
+            List<Token> parameters = new ArrayList<>();
+            if (!check(RIGHT_PAREN)) {
+                do {
+                    if (parameters.size() >= 255) {
+                        error(peek(), "Can't have more than 255 parameters.");
+                    }
+                    parameters.add(consume(IDENTIFIER, "Expect parameter name."));
+                } while (match(COMMA));
+            }
+            consume(RIGHT_PAREN, "Expect ')' after parameter.");
+
+            consume(LEFT_BRACE, "Expect '{' before body.");
+            List<Stmt> body = block();
+            return new Expr.AnonymousFunction(parameters, body);
+        }
+
         throw error(peek(), "Expect expression.");
     }
 

@@ -198,6 +198,11 @@ public class Interpreter implements Expr.Visitor<Object>,
         return value;
     }
 
+    @Override
+    public Object visitAnonymousFunctionExpr(Expr.AnonymousFunction expr) {
+        return new LoxFunction(new Stmt.Function(null, expr.params, expr.body), environment);
+    }
+
     private void checkNumberOperand(Token operator, Object operand) {
         if (operand instanceof Double) return;
         throw new RuntimeError(operator, "Operand must be a number.");
