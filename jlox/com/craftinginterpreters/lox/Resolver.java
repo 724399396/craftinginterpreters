@@ -1,13 +1,11 @@
 package com.craftinginterpreters.lox;
 
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Stack;
+import java.util.*;
 
 public class Resolver implements Expr.Visitor<Void>, Stmt.Visitor<Void> {
     private final Interpreter interpreter;
     private final Stack<Map<String, Boolean>> scopes = new Stack<>();
+    private final Stack<Map<String, Token>> variableUseds = new Stack<>();
     private FunctionType currentFunction = FunctionType.NONE;
 
     public Resolver(Interpreter interpreter) {
@@ -16,10 +14,17 @@ public class Resolver implements Expr.Visitor<Void>, Stmt.Visitor<Void> {
 
     private void beginScope() {
         scopes.push(new HashMap<String, Boolean>());
+        variableUseds.push(new HashMap<>());
     }
 
     private void endScope() {
-        scopes.pop();
+        Map<String, Boolean> scope = scopes.pop();
+        Map<String, Token> variableUsed = variableUseds.pop();
+        for (String key : scope.keySet()) {
+           if (!variableUsed.containsKey(key))  {
+               Lox.error(1,"Variable " + key + " not used.");
+           }
+        }
     }
 
     private void declare(Token name) {
@@ -40,6 +45,7 @@ public class Resolver implements Expr.Visitor<Void>, Stmt.Visitor<Void> {
     private void resolveLocal(Expr expr, Token name) {
         for (int i = scopes.size() - 1; i >= 0; i--) {
             if (scopes.get(i).containsKey(name.lexeme)) {
+                variableUseds.get(i).put(name.lexeme, name);
                 interpreter.resolve(expr, scopes.size() - 1 - i);
                 return;
             }
