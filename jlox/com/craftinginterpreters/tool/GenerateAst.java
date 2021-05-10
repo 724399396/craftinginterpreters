@@ -35,7 +35,7 @@ public class GenerateAst {
                 "Return     : Token keyword, Expr value",
                 "Var        : Token name, Expr initializer",
                 "While      : Expr condition, Stmt body",
-                "Function   : Token name, List<Token> params, List<Stmt> body"
+                "Function   : Token name, List<Token> params, List<Stmt> body, boolean isStatic"
         ));
     }
 

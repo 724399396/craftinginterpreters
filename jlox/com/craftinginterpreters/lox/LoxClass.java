@@ -1,15 +1,19 @@
 package com.craftinginterpreters.lox;
 
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-public class LoxClass implements LoxCallable {
+public class LoxClass extends LoxInstance implements LoxCallable {
     final String name;
     private final Map<String, LoxFunction> methods;
+    private static LoxClass root = new LoxClass("root", new HashMap<>(), new HashMap<>());
 
-    public LoxClass(String name, Map<String, LoxFunction> methods) {
+    public LoxClass(String name, Map<String, LoxFunction> methods, Map<String, LoxFunction> staticMethods) {
+        super(root);
         this.name = name;
         this.methods = methods;
+        staticMethods.forEach((k,v) -> root.methods.put(k,v));
     }
 
     @Override
