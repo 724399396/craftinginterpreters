@@ -5,6 +5,8 @@
         "*.wxs": "javascript",
         "debug.h": "c",
         "chunk.h": "c",
-        "common.h": "c"
+        "common.h": "c",
+        "value.h": "c",
+        "vm.h": "c"
     }
 }
