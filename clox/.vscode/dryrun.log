@@ -1,15 +1,15 @@
-make clox --dry-run --always-make --keep-going --print-directory
+make --dry-run --always-make --keep-going --print-directory
 make: Entering directory '/home/weili/work/learning/craftinginterpreters/clox'
 gcc -c -o chunk.o chunk.c
-gcc -c -o compiler.o compiler.c
 gcc -c -o value.o value.c
-gcc -c -o object.o object.c
+gcc -c -o compiler.o compiler.c
 gcc -c -o vm.o vm.c
 gcc -c -o table.o table.c
-gcc -c -o main.o main.c
-gcc -c -o debug.o debug.c
 gcc -c -o memory.o memory.c
+gcc -c -o main.o main.c
+gcc -c -o object.o object.c
+gcc -c -o debug.o debug.c
 gcc -c -o scanner.o scanner.c
-gcc -o clox chunk.o compiler.o value.o object.o vm.o table.o main.o debug.o memory.o scanner.o
+gcc -o clox chunk.o value.o compiler.o vm.o table.o memory.o main.o object.o debug.o scanner.o
 make: Leaving directory '/home/weili/work/learning/craftinginterpreters/clox'
  
