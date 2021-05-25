@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Mon May 24 20:16:16 2021
+# Make data base, printed on Tue May 25 15:24:49 2021
 
 # Variables
 
@@ -18,8 +18,6 @@ GNUMAKEFLAGS :=
 <D = $(patsubst %/,%,$(dir $<))
 # automatic
 ?F = $(notdir $?)
-# environment
-PAPERSIZE = letter
 # environment
 DESKTOP_SESSION = ubuntu
 # default
@@ -33,7 +31,7 @@ VSCODE_LOG_NATIVE = false
 # automatic
 ?D = $(patsubst %/,%,$(dir $?))
 # environment
-GRADLE_HOME = /home/weili/.sdkman/candidates/gradle/current
+IM_CONFIG_PHASE = 1
 # automatic
 @D = $(patsubst %/,%,$(dir $@))
 # environment
@@ -47,13 +45,15 @@ CURDIR := /home/weili/work/learning/craftinginterpreters/clox
 # makefile
 SHELL = /bin/sh
 # environment
-VTE_VERSION = 6003
-# environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 9:57114
+_ = /usr/share/code/code
+# environment
+JOURNAL_STREAM = 9:56770
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+IMAGE_PREFIX = docker.lingrit.com/
 # environment
 MAVEN_HOME = /home/weili/program/maven
 # makefile (from 'Makefile', line 1)
@@ -63,7 +63,9 @@ JAVA_HOME = /home/weili/program/jdk
 # automatic
 @F = $(notdir $@)
 # environment
-IM_CONFIG_PHASE = 1
+GIO_LAUNCHED_DESKTOP_FILE = /usr/share/applications/code.desktop
+# environment
+QT_IM_MODULE = fcitx
 # environment
 USERNAME = weili
 # environment
@@ -73,93 +75,103 @@ MANDATORY_PATH = /usr/share/gconf/ubuntu.mandatory.path
 # environment
 XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
 # environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+# environment
 DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
 # environment
 VSCODE_VERBOSE_LOGGING = true
+# environment
+PERL_MM_OPT = INSTALL_BASE=/home/weili/perl5
 # makefile (from 'Makefile', line 20)
 CFILES = $(wildcard *.c)
 # environment
-_ = /usr/bin/code
-# environment
-MANAGERPID = 4640
+MANAGERPID = 2951
 # environment
 CLUTTER_IM_MODULE = fcitx
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-0fbc01dd-3991-4c73-900d-c61fc50ab23b.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-739ca74c-802e-4428-b355-1cf1dd014e9c.sock
 # environment
-LC_NAME = en_US.UTF-8
+LC_NAME = zh_CN.UTF-8
 # environment
-VSCODE_CWD = /home/weili/work/learning/craftinginterpreters/clox
+VSCODE_CWD = /home/weili
+# environment
+GOPROXY = https://proxy.golang.org,direct
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/weili/.sdkman/candidates/springboot/current/bin:/home/weili/.sdkman/candidates/gradle/current/bin:/home/weili/.nvm/versions/node/v12.22.1/bin:/home/weili/.local/bin:/home/weili/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/weili/program/jdk/bin:/home/weili/program/maven/bin:/home/weili/.local/bin:/usr/local/go/bin:/home/weili/.cabal/bin:/home/weili/.cargo/bin:/home/weili/.fzf/bin
+NO_PROXY = 127.0.0.1,localhost
 # environment
 GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
+GJS_DEBUG_OUTPUT = stderr
+# environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/weili-desktop:@/tmp/.ICE-unix/4870,unix/weili-desktop:/tmp/.ICE-unix/4870
+SESSION_MANAGER = local/weili:@/tmp/.ICE-unix/3211,unix/weili:/tmp/.ICE-unix/3211
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
 SDKMAN_DIR = /home/weili/.sdkman
 # environment
-SDKMAN_CANDIDATES_API = https://api.sdkman.io/2
-# environment
 KUBE_EDITOR = /usr/bin/emacsclient
 # environment
-GOPATH = /home/weili/go
+GOPATH = /home/weili/work/go
 # environment
-NVM_BIN = /home/weili/.nvm/versions/node/v12.22.1/bin
+NVM_BIN = /home/weili/.nvm/versions/node/v10.24.1/bin
 # environment
 BREAKPAD_DUMP_LOCATION = /home/weili/.config/Code/exthost Crash Reports
 # environment
 XDG_MENU_PREFIX = gnome-
 # environment
-SDKMAN_PLATFORM = Linux64
-# environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=d7132ffe-f6e5-484e-b917-a791ffa10ac5&iid=d7132ffe-f6e5-484e-b917-a791ffa10ac5&sid=d7132ffe-f6e5-484e-b917-a791ffa10ac5","uploadToServer":true}
+VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=25dea5b1-7118-4d14-92e4-c06ec11587ca&iid=25dea5b1-7118-4d14-92e4-c06ec11587ca&sid=25dea5b1-7118-4d14-92e4-c06ec11587ca","uploadToServer":true}
 # environment
-INVOCATION_ID = 93c6ba5773f94922a78fb41f4548d097
+INVOCATION_ID = 05f1fa4dbf044e84a0690a3b30586593
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
-ELECTRON_NO_ATTACH_CONSOLE = 1
-# environment
-LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+LS_COLORS = 
 # environment
 XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# environment
+GIO_LAUNCHED_DESKTOP_FILE_PID = 118629
 # automatic
 %F = $(notdir $%)
 # environment
-DISPLAY = :1
+DISPLAY = :0
 # makefile (from 'Makefile', line 21)
 OBJFILES = $(CFILES:.c=.o)
+# environment
+no_proxy = 127.0.0.1,localhost
 # environment
 GTK_IM_MODULE = fcitx
 # environment
 VSCODE_PIPE_LOGGING = true
 # environment
+noproxy = 127.0.0.1
+# environment
 PWD = /home/weili/work/learning/craftinginterpreters/clox
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 4826
+SSH_AGENT_PID = 3150
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
 GTK_MODULES = gail:atk-bridge
 # environment
-VSCODE_AMD_ENTRYPOINT = vs/workbench/services/extensions/node/extensionHostProcess
+GOMODCACHE = /home/weili/work/go/pkg/mod
 # environment
 HOME = /home/weili
 # environment
-VSCODE_CLI = 1
+PERL_MB_OPT = --install_base "/home/weili/perl5"
+# environment
+PERL_LOCAL_LIB_ROOT = /home/weili/perl5
+# environment
+PERL5LIB = /home/weili/perl5/lib/perl5
 # environment
 LOGNAME = weili
 # environment
@@ -177,21 +189,17 @@ GNOME_DESKTOP_SESSION_ID = this-is-deprecated
 # automatic
 ^D = $(patsubst %/,%,$(dir $^))
 # environment
-LC_TIME = en_US.UTF-8
-# environment
-SDKMAN_VERSION = 5.7.3+337
-# environment
-COLORTERM = truecolor
+LC_TIME = zh_CN.UTF-8
 # default
 MAKE = $(MAKE_COMMAND)
 # default
 MAKECMDGOALS := all
 # environment
-QT_IM_MODULE = fcitx
+PATH = /home/weili/perl5/bin:/home/weili/.nvm/versions/node/v10.24.1/bin:/home/weili/.local/bin:/home/weili/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/weili/program/jdk/bin:/home/weili/program/maven/bin:/home/weili/.local/bin:/home/weili/.cabal/bin:/home/weili/.yarn/bin:/home/weili/program/mewchan/bin:/usr/local/go/bin:/home/weili/.fzf/bin:/home/weili/anaconda3/bin:/home/weili/work/go/bin
 # environment
-SHLVL = 1
+SHLVL = 0
 # makefile (from 'Makefile', line 2)
-CC = gcc
+CC = gcc -g
 # environment
 GNOME_SHELL_SESSION_MODE = ubuntu
 # default
@@ -199,7 +207,7 @@ MAKE_VERSION := 4.2.1
 # environment
 USER = weili
 # environment
-LC_MONETARY = en_US.UTF-8
+LC_MONETARY = zh_CN.UTF-8
 # makefile
 .DEFAULT_GOAL := clox
 # environment
@@ -211,17 +219,19 @@ LESS = -R
 # automatic
 %D = $(patsubst %/,%,$(dir $%))
 # environment
-LC_TELEPHONE = en_US.UTF-8
+LC_TELEPHONE = zh_CN.UTF-8
 # default
 MAKE_COMMAND := make
 # environment
 VSCODE_NODE_CACHED_DATA_DIR = /home/weili/.config/Code/CachedData/054a9295330880ed74ceaedda236253b4f39a335
 # environment
-OLDPWD = /home/weili/work/learning/craftinginterpreters
+OLDPWD = /home/weili
 # default
 .VARIABLES := 
 # automatic
 *F = $(notdir $*)
+# environment
+LANGUAGE = en_US:en
 # environment
 VSCODE_IPC_HOOK = /run/user/1000/vscode-6c9013d8-1.56.2-main.sock
 # makefile
@@ -237,11 +247,7 @@ NVM_DIR = /home/weili/.nvm
 # environment
 GDK_BACKEND = x11
 # environment
-LC_PAPER = en_US.UTF-8
-# makefile (from 'Makefile', line 23)
-OUT = clox
-# environment
-LC_IDENTIFICATION = en_US.UTF-8
+LC_PAPER = zh_CN.UTF-8
 # environment
 QT_ACCESSIBILITY = 1
 # environment
@@ -249,54 +255,46 @@ DEFAULTS_PATH = /usr/share/gconf/ubuntu.default.path
 # default
 MAKEFILES := 
 # environment
-LC_NUMERIC = en_US.UTF-8
+LC_NUMERIC = zh_CN.UTF-8
 # automatic
 <F = $(notdir $<)
 # environment
 ELECTRON_RUN_AS_NODE = 1
 # environment
-LC_MEASUREMENT = en_US.UTF-8
-# environment
-SDKMAN_CANDIDATES_DIR = /home/weili/.sdkman/candidates
+LC_MEASUREMENT = zh_CN.UTF-8
 # environment
 PAGER = less
 # environment
 LC_ALL = C
-# environment
-SPRINGBOOT_HOME = /home/weili/.sdkman/candidates/springboot/current
+# makefile (from 'Makefile', line 23)
+OUT = clox
 # environment
 QT4_IM_MODULE = fcitx
 # environment
+ 
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
-# environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/004fae9a_e183_423b_bfe2_d2fc36fe929e
 # automatic
 ^F = $(notdir $^)
-# environment
-GNOME_TERMINAL_SERVICE = :1.90
 # default
 SUFFIXES := 
 # environment
- 
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
 WINDOWPATH = 2
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
-GJS_DEBUG_OUTPUT = stderr
+LC_IDENTIFICATION = zh_CN.UTF-8
 # default
 .RECIPEPREFIX := 
 # environment
-LC_ADDRESS = en_US.UTF-8
+LC_ADDRESS = zh_CN.UTF-8
 # environment
 LANG = C
 # environment
-TERM = xterm-256color
-# environment
-VSCODE_PID = 7832
+VSCODE_PID = 118629
 # variable set hash-table stats:
-# Load=141/1024=14%, Rehash=0, Collisions=27/169=16%
+# Load=140/1024=14%, Rehash=0, Collisions=26/168=15%
 
 # Pattern-specific Variable Values
 
@@ -304,9 +302,9 @@ VSCODE_PID = 7832
 
 # Directories
 
-# . (device 2049, inode 5121699): 35 files, no impossibilities.
+# . (device 2083, inode 1671605): 36 files, no impossibilities.
 
-# 35 files, no impossibilities in 1 directories.
+# 36 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -357,7 +355,7 @@ object.o:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2021-05-12 20:34:35.633496426
+#  Last modified 2021-05-25 15:24:37.402270345
 #  File has been updated.
 #  Successfully updated.
 
@@ -399,7 +397,7 @@ main.o:
 #  Modification time never checked.
 #  File has not been updated.
 
-clox: chunk.o value.o compiler.o vm.o table.o memory.o main.o object.o debug.o scanner.o
+clox: chunk.o compiler.o value.o object.o vm.o table.o main.o debug.o memory.o scanner.o
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -429,9 +427,9 @@ compiler.o:
 # strcache buffers: 1 (0) / strings = 45 / storage = 365 B / avg = 8 B
 # current buf: size = 8162 B / used = 365 B / count = 45 / avg = 8 B
 
-# strcache performance: lookups = 63 / hit rate = 28%
+# strcache performance: lookups = 64 / hit rate = 29%
 # hash-table stats:
-# Load=45/8192=1%, Rehash=0, Collisions=8/63=13%
-# Finished Make data base on Mon May 24 20:16:16 2021
+# Load=45/8192=1%, Rehash=0, Collisions=8/64=12%
+# Finished Make data base on Tue May 25 15:24:49 2021
 
  
