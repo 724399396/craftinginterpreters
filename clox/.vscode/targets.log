@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Wed May 26 09:06:57 2021
+# Make data base, printed on Wed May 26 15:01:03 2021
 
 # Variables
 
@@ -49,7 +49,7 @@ VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupp
 # environment
 _ = /usr/share/code/code
 # environment
-JOURNAL_STREAM = 9:60458
+JOURNAL_STREAM = 9:58434
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -83,11 +83,11 @@ PERL_MM_OPT = INSTALL_BASE=/home/weili/perl5
 # makefile (from 'Makefile', line 20)
 CFILES = $(wildcard *.c)
 # environment
-MANAGERPID = 3221
+MANAGERPID = 3250
 # environment
 CLUTTER_IM_MODULE = fcitx
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-46e41c66-bd4b-48f9-9bab-36538ba17d54.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-4c19f5f2-4ac8-414d-a5c3-7928d4c76c3f.sock
 # environment
 LC_NAME = zh_CN.UTF-8
 # environment
@@ -103,7 +103,7 @@ GJS_DEBUG_OUTPUT = stderr
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/weili:@/tmp/.ICE-unix/3471,unix/weili:/tmp/.ICE-unix/3471
+SESSION_MANAGER = local/weili:@/tmp/.ICE-unix/3506,unix/weili:/tmp/.ICE-unix/3506
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -123,7 +123,7 @@ VSCODE_LOG_STACK = false
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=25dea5b1-7118-4d14-92e4-c06ec11587ca&iid=25dea5b1-7118-4d14-92e4-c06ec11587ca&sid=25dea5b1-7118-4d14-92e4-c06ec11587ca","uploadToServer":true}
 # environment
-INVOCATION_ID = add38155ec20450cb9551d20c8f7a4b3
+INVOCATION_ID = 729a4ca4a6c44b1dad368a079462c9cc
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -133,7 +133,7 @@ XDG_SESSION_DESKTOP = ubuntu
 # environment
 SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
 # environment
-GIO_LAUNCHED_DESKTOP_FILE_PID = 4160
+GIO_LAUNCHED_DESKTOP_FILE_PID = 4066
 # automatic
 %F = $(notdir $%)
 # environment
@@ -153,7 +153,7 @@ PWD = /home/weili/work/learning/craftinginterpreters/clox
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 3410
+SSH_AGENT_PID = 3446
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -288,7 +288,7 @@ LC_ADDRESS = zh_CN.UTF-8
 # environment
 LANG = C
 # environment
-VSCODE_PID = 4160
+VSCODE_PID = 4066
 # variable set hash-table stats:
 # Load=138/1024=13%, Rehash=0, Collisions=25/166=15%
 
@@ -426,6 +426,6 @@ compiler.o:
 # strcache performance: lookups = 64 / hit rate = 29%
 # hash-table stats:
 # Load=45/8192=1%, Rehash=0, Collisions=8/64=12%
-# Finished Make data base on Wed May 26 09:06:57 2021
+# Finished Make data base on Wed May 26 15:01:03 2021
 
  
