@@ -3,7 +3,7 @@
         {
             "cwd": "/home/weili/work/learning/craftinginterpreters/clox",
             "binaryPath": "/home/weili/work/learning/craftinginterpreters/clox/clox",
-            "binaryArgs": []
+            "binaryArgs": ["/tmp/1"]
         }
     ]
 }

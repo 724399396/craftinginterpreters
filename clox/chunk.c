@@ -2,6 +2,7 @@
 
 #include "chunk.h"
 #include "value.h"
+#include "memory.h"
 
 void initChunk(Chunk *chunk)
 {
