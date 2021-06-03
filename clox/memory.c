@@ -21,6 +21,10 @@ static void freeObject(Obj *object)
 {
     switch (object->type)
     {
+    case OBJ_CLOSURE:
+    {
+        FREE(ObjClosure, object);
+    }
     case OBJ_FUNCTION:
     {
         ObjFunction *function = (ObjFunction *)object;
