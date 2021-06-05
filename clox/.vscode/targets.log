@@ -1,6 +1,4 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
-make: *** No rule to make target 'all'.  Stop.
- 
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -8,7 +6,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun  3 20:54:56 2021
+# Make data base, printed on Sat Jun  5 09:45:05 2021
 
 # Variables
 
@@ -51,7 +49,7 @@ VTE_VERSION = 6003
 # environment
 VSCODE_NLS_CONFIG = {"locale":"en-us","availableLanguages":{},"_languagePackSupport":true}
 # environment
-JOURNAL_STREAM = 9:52402
+JOURNAL_STREAM = 9:140445
 # environment
 XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
 # environment
@@ -81,11 +79,11 @@ CFILES = $(wildcard *.c)
 # environment
 _ = /usr/bin/code
 # environment
-MANAGERPID = 3385
+MANAGERPID = 4687
 # environment
 CLUTTER_IM_MODULE = fcitx
 # environment
-VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-f29ff957-6f84-45d2-9596-bebdd50dbf44.sock
+VSCODE_IPC_HOOK_EXTHOST = /run/user/1000/vscode-ipc-45abf1bc-9671-4ef9-a0da-0907578a5a80.sock
 # environment
 LC_NAME = en_US.UTF-8
 # environment
@@ -99,7 +97,7 @@ GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
 # environment
 LSCOLORS = Gxfxcxdxbxegedabagacad
 # environment
-SESSION_MANAGER = local/weili-desktop:@/tmp/.ICE-unix/3607,unix/weili-desktop:/tmp/.ICE-unix/3607
+SESSION_MANAGER = local/weili-desktop:@/tmp/.ICE-unix/5079,unix/weili-desktop:/tmp/.ICE-unix/5079
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
 # environment
@@ -123,7 +121,7 @@ VSCODE_LOG_STACK = false
 # environment
 VSCODE_CRASH_REPORTER_START_OPTIONS = {"companyName":"Microsoft","productName":"VSCode","submitURL":"appcenter://code?aid=fba07a4d-84bd-4fc8-a125-9640fc8ce171&uid=d7132ffe-f6e5-484e-b917-a791ffa10ac5&iid=d7132ffe-f6e5-484e-b917-a791ffa10ac5&sid=d7132ffe-f6e5-484e-b917-a791ffa10ac5","uploadToServer":true}
 # environment
-INVOCATION_ID = 8079a7351a96480292870ad8a1c2c8a3
+INVOCATION_ID = e9d14fe7f3d640febd01a9d7558c2bdf
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -149,7 +147,7 @@ PWD = /home/weili/work/learning/craftinginterpreters/clox
 # default
 .LOADED := 
 # environment
-SSH_AGENT_PID = 3563
+SSH_AGENT_PID = 5013
 # environment
 ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
 # environment
@@ -217,7 +215,7 @@ MAKE_COMMAND := make
 # environment
 VSCODE_NODE_CACHED_DATA_DIR = /home/weili/.config/Code/CachedData/054a9295330880ed74ceaedda236253b4f39a335
 # environment
-OLDPWD = /home/weili/work/learning/craftinginterpreters
+OLDPWD = /home/weili
 # default
 .VARIABLES := 
 # automatic
@@ -269,18 +267,20 @@ QT4_IM_MODULE = fcitx
 # environment
 GJS_DEBUG_TOPICS = JS ERROR;JS LOG
 # environment
-GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/ec032ae8_45a8_4a2e_9cb6_01ed44f8050a
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/fdb5b85c_fdff_4164_a786_9f8c150e55e9
 # automatic
 ^F = $(notdir $^)
 # environment
-GNOME_TERMINAL_SERVICE = :1.94
+GNOME_TERMINAL_SERVICE = :1.89
 # default
 SUFFIXES := 
+ 
+make: *** No rule to make target 'all'.  Stop.
+ 
 # environment
 CHROME_DESKTOP = code-url-handler.desktop
 # environment
 WINDOWPATH = 2
- 
 # default
 .INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
 # environment
@@ -294,7 +294,7 @@ LANG = C
 # environment
 TERM = xterm-256color
 # environment
-VSCODE_PID = 10718
+VSCODE_PID = 11667
 # variable set hash-table stats:
 # Load=141/1024=14%, Rehash=0, Collisions=27/169=16%
 
@@ -432,6 +432,6 @@ compiler.o:
 # strcache performance: lookups = 64 / hit rate = 29%
 # hash-table stats:
 # Load=45/8192=1%, Rehash=0, Collisions=8/64=12%
-# Finished Make data base on Thu Jun  3 20:54:56 2021
+# Finished Make data base on Sat Jun  5 09:45:05 2021
 
  
