@@ -5,5 +5,12 @@
             "binaryPath": "/home/weili/work/learning/craftinginterpreters/clox/clox",
             "binaryArgs": ["/tmp/1"]
         }
-    ]
+    ],
+    "files.associations": {
+        "*.cjson": "jsonc",
+        "*.wxss": "css",
+        "*.wxs": "javascript",
+        "*.tcc": "c",
+        "typeinfo": "cpp"
+    }
 }
